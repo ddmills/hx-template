@@ -11,6 +11,7 @@ features
 6. Rendering Layers
 7. Cool data structures - Grid, IntPoint, FloatPoint, Coordinate, WeightedTable, PriorityQueue
 8. Cool algorithsm - Astar, Bresenham, Shadowcast, Floodfill
+9. Tweening
 
 ```haxe
 // Define an "Attacked" event
@@ -42,7 +43,7 @@ class Health extends Component {
 
 	private function onAttacked(evt:AttackedEvent)
 	{
-		value -= evt.attack.damage;
+		value -= evt.dmg;
 
 		if (value <= 0)
 		{
